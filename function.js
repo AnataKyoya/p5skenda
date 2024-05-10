@@ -162,7 +162,7 @@ function downloadTwibon() {
         html2canvas(node).then(function (canvas) {
             downloadCanvasAsImage(
                 canvas,
-                fileName.toLowerCase().split(" ").join("-") + ".jpg"
+                fileName.toLowerCase().split(" ").join("-") + ".png"
             );
             setTimeout(() => {
                 document.querySelector(".frame").style = "scale: 0.36;";
