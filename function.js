@@ -247,3 +247,23 @@ function downloadCanvasAsImage(v, filename) {
     a.download = filename;
     a.dispatchEvent(new MouseEvent("click"));
 }
+
+function download(v, filename) {
+    let a = document.createElement("a");
+    a.href = v; // Mengatur URL langsung dari v ke href
+    a.download = filename;
+
+    // Buat event klik palsu untuk memicu unduhan
+    let event = new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+    });
+
+    // Dispatch event klik pada elemen anchor
+    a.dispatchEvent(event);
+}
+
+let reels = () => {
+    download("./reels.png", "reels-frame.png");
+};
