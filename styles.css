@@ -184,7 +184,6 @@ body {
     font-weight: 800;
     letter-spacing: 1px;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
 #file {
@@ -221,4 +220,10 @@ body {
 
 .twibon-opsi {
     display: none;
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
