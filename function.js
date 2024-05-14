@@ -11,6 +11,10 @@ let fotoContest = document.querySelector(".twibon-foto-contest");
 let individu = document.querySelector(".twibon-individu");
 let frame = document.querySelector(".design-frame img");
 
+document.getElementById("noAction").addEventListener("contextmenu", function(event) {
+    // Mencegah perilaku default dari event contextmenu
+    event.preventDefault();
+
 // fotoContest.addEventListener("click", ()=>{
 frame.src = fotoContest.querySelector("img").src;
 teksElem[0].style =
