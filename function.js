@@ -11,7 +11,7 @@ let fotoContest = document.querySelector(".twibon-foto-contest");
 let individu = document.querySelector(".twibon-individu");
 let frame = document.querySelector(".design-frame img");
 
-document.getElementById("gambar").addEventListener("contextmenu", function(event) {
+document.getElementById("noAction").addEventListener("contextmenu", function(event) {
     // Mencegah perilaku default dari event contextmenu
     event.preventDefault();
 });
